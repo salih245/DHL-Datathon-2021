@@ -15,8 +15,8 @@
 <li><em> move the items that should be picked that day from checklist to picking_list</em></li>
 <li><em> pick all the items from picking_list</em></li>
 </ol>
-<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1 if the daily capacity is not exceeded, pick the items as 'normal_picking'</em></p>
-<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2 if the daily capacity is exceeded, pick the items as 'overwork_picking'</em></p>
+<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1 if the daily capacity is not exceeded, pick the items as 'normal_picking'</em>
+<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2 if the daily capacity is exceeded, pick the items as 'overwork_picking'</em>
 <ol start="4">
 <li><em> If there are still empty places in the waves and daily capacity is not full, do extra picking (wave utilization)</em></li>
 </ol>

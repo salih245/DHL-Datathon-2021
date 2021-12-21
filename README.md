@@ -1,5 +1,4 @@
 <p><span style="font-weight: 400;"># DHL Datathon 2021</span></p>
-<p>&nbsp;</p>
 <p><span style="font-weight: 400;">## Data Butchers - Winner</span></p>
 <p><span style="font-weight: 400;">In DHL Datathon 2021, there were 3 different projects; Product Segmentation, Volume Prediction, and Developing a Picking Algorithm. Detailed solution approaches to these projects are presented below.</span></p>
 <p><span style="font-weight: 400;">#### Product Segmentation</span></p>
@@ -12,32 +11,32 @@
 <p><span style="font-weight: 400;">The picking algorithm is developed to collect the placed orders before the shipment date while minimizing the daily wave number under some capacity constraints. These constraints are: first, the daily picked amount cannot exceed a predefined capacity, second, in each wave, a limited number of types of material can be picked. After doing some research, using mathematical models is costly in terms of computation time and because of the time constraint in the operation process, we decided to move on with a heuristic approach to solve the problem in a fast and efficient way. The pseudo-code for the algorithm:</span></p>
 <p><span style="font-weight: 400;">for each day, do:</span></p>
 <ol>
-<li><span style="font-weight: 400;"> Add the newly placed orders and the orders that haven&rsquo;t shipped to </span><em><span style="font-weight: 400;">checklist</span></em></li>
-<li><span style="font-weight: 400;"> move the items that should be picked that day from </span><em><span style="font-weight: 400;">checklist</span></em><span style="font-weight: 400;"> to </span><em><span style="font-weight: 400;">picking_list</span></em></li>
-<li><span style="font-weight: 400;"> pick all the items from </span><em><span style="font-weight: 400;">picking_list</span></em></li>
+<li><em> Add the newly placed orders and the orders that haven&rsquo;t shipped to checklist</em></li>
+<li><em> move the items that should be picked that day from checklist to picking_list</em></li>
+<li><em> pick all the items from picking_list</em></li>
 </ol>
-<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1 if the daily capacity is not exceeded&nbsp;</span></p>
-<p><span style="font-weight: 400;">pick the items as&nbsp; </span><em><span style="font-weight: 400;">'normal_picking'&nbsp;</span></em></p>
-<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2 if the daily capacity is exceeded&nbsp;&nbsp;</span></p>
-<p><span style="font-weight: 400;">pick the items as&nbsp; </span><em><span style="font-weight: 400;">'overwork_picking'</span></em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1 if the daily capacity is not exceeded&nbsp;</em></p>
+<p><em>pick the items as&nbsp; 'normal_picking'&nbsp;</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2 if the daily capacity is exceeded&nbsp;&nbsp;</em></p>
+<p><em>pick the items as&nbsp; 'overwork_picking'</em></p>
 <ol start="4">
-<li><span style="font-weight: 400;"> If there are still empty places in the waves and daily capacity is not full, do extra picking (wave utilization)</span></li>
+<li><em> If there are still empty places in the waves and daily capacity is not full, do extra picking (wave utilization)</em></li>
 </ol>
-<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1 pick the same type of materials that are in the </span><em><span style="font-weight: 400;">checklist</span></em><span style="font-weight: 400;">&nbsp;</span></p>
-<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2 if there are still empty places in the waves pick the orders that have the closest shipping date (if there isn&rsquo;t expected order for upcoming days for these materials)</span></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1 pick the same type of materials that are in the checklist&nbsp;</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2 if there are still empty places in the waves pick the orders that have the closest shipping date (if there isn&rsquo;t expected order for upcoming days for these materials)</em></p>
 <ol start="5">
-<li><span style="font-weight: 400;"> If the daily capacity is still not full, do extra picking</span></li>
+<li><em> If the daily capacity is still not full, do extra picking</em></li>
 </ol>
-<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.0 control the </span><em><span style="font-weight: 400;">checklist</span></em><span style="font-weight: 400;"> if there is any bottleneck in the upcoming days</span></p>
-<p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.1 if there is any bottleneck, do extra picking to solve this bottleneck</span></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.0 control the checklist if there is any bottleneck in the upcoming days</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.1 if there is any bottleneck, do extra picking to solve this bottleneck</em></p>
 <ol start="6">
-<li><span style="font-weight: 400;"> print the results as work orders</span></li>
+<li><em> print the results as work orders</em></li>
 </ol>
 <p><span style="font-weight: 400;">The average capacity utilization of our algorithm is 94% and the average wave utilization is 99%.</span></p>
 <p><span style="font-weight: 400;">Further improvements for our algorithm:</span></p>
 <ol>
-<li><span style="font-weight: 400;"> balance the workload between days</span></li>
-<li><span style="font-weight: 400;"> add holidays calendar</span></li>
-<li><span style="font-weight: 400;"> minimize the workload for non-working days</span></li>
-<li><span style="font-weight: 400;"> further predictions are included but can be used more</span></li>
+<li><span style="font-weight: 400;"> Balance the workload between days</span></li>
+<li><span style="font-weight: 400;">Add holidays calendar</span></li>
+<li><span style="font-weight: 400;">Minimize the workload for non-working days</span></li>
+<li><span style="font-weight: 400;">Further predictions are included but can be used more</span></li>
 </ol>

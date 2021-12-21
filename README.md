@@ -11,19 +11,19 @@
 <p><span style="font-weight: 400;">The picking algorithm is developed to collect the placed orders before the shipment date while minimizing the daily wave number under some capacity constraints. These constraints are: first, the daily picked amount cannot exceed a predefined capacity, second, in each wave, a limited number of types of material can be picked. After doing some research, using mathematical models is costly in terms of computation time and because of the time constraint in the operation process, we decided to move on with a heuristic approach to solve the problem in a fast and efficient way. The pseudo-code for the algorithm:</span></p>
 <p><span style="font-weight: 400;">for each day, do:</span></p>
 <ol>
-<li><em> Add the newly placed orders and the orders that haven&rsquo;t shipped to checklist</em></li>
+<li><em>add the newly placed orders and the orders that haven&rsquo;t shipped to checklist</em></li>
 <li><em> move the items that should be picked that day from checklist to picking_list</em></li>
 <li><em> pick all the items from picking_list</em></li>
 </ol>
 <p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1 if the daily capacity is not exceeded&nbsp;</em></p>
-<p><em>pick the items as&nbsp; 'normal_picking'&nbsp;</em></p>
+<p><em>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;pick the items as&nbsp; 'normal_picking'&nbsp;</em></p>
 <p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.2 if the daily capacity is exceeded&nbsp;&nbsp;</em></p>
-<p><em>pick the items as&nbsp; 'overwork_picking'</em></p>
+<p><em>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;pick the items as&nbsp; 'overwork_picking'</em></p>
 <ol start="4">
 <li><em> If there are still empty places in the waves and daily capacity is not full, do extra picking (wave utilization)</em></li>
 </ol>
 <p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1 pick the same type of materials that are in the checklist&nbsp;</em></p>
-<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2 if there are still empty places in the waves pick the orders that have the closest shipping date (if there isn&rsquo;t expected order for upcoming days for these materials)</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2 if there are still empty places in the waves pick the orders that have&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;the closest shipping date (if there isn&rsquo;t expected order for upcoming&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;days for these materials)</em></p>
 <ol start="5">
 <li><em> If the daily capacity is still not full, do extra picking</em></li>
 </ol>

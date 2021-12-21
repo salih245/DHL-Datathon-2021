@@ -2,7 +2,7 @@
 
 ## Data Butchers - Winner
 
-[![N|Solid](https://raw.githubusercontent.com/ihkaraman/ihkaraman/main/images/dhl_datathon_21.png)](https://www.linkedin.com/feed/update/urn:li:activity:6877662215583891456/)
+[![N|Solid](https://www.linkedin.com/feed/update/urn:li:activity:6877662215583891456/)
 
 In DHL Datathon 2021, there were 3 different projects; Product Segmentation, Volume Prediction, and Developing a Picking Algorithm. Detailed solution approaches to these projects are presented below.
 

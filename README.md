@@ -25,16 +25,16 @@ for each day, do: <br/>
     	<ul>2. move the items that should be picked that day from checklist to picking_list</ul> <br/>
     	<ul>3. pick all the items from picking_list</ul> <br/>
         <li>3.1 if the daily capacity is not exceeded</li> <br/>
-pick the items as  'normal_picking' <br/>
-        3.2 if the daily capacity is exceeded <br/> 
-	pick the items as  'overwork_picking' <br/>
-    4. If there are still empty places in the waves and daily capacity is not full, do extra picking (wave utilization) <br/>
-        4.1 pick the same type of materials that are in the checklist <br/>
-        4.2 if there are still empty places in the waves pick the orders that have the closest shipping date (if there isn’t expected order for upcoming days for these materials) <br/>
-    5. If the daily capacity is still not full, do extra picking <br/>
-        5.0 control the checklist if there is any bottleneck in the upcoming days <br/>
-        5.1 if there is any bottleneck, do extra picking to solve this bottleneck <br/>
-    6. print the results as work orders <br/></ul>
+		<li>pick the items as  'normal_picking'</li> <br/>
+        <li>3.2 if the daily capacity is exceeded</li> <br/> 
+	<li>pick the items as  'overwork_picking'</li> <br/>
+    	<ul>4. If there are still empty places in the waves and daily capacity is not full, do extra picking (wave utilization)</ul> <br/>
+        <li>4.1 pick the same type of materials that are in the checklist</li> <br/>
+        <li>4.2 if there are still empty places in the waves pick the orders that have the closest shipping date (if there isn’t expected order for upcoming days for these materials)</li> <br/>
+    	<ul>5. If the daily capacity is still not full, do extra picking</ul> <br/>
+        <li>5.0 control the checklist if there is any bottleneck in the upcoming days</li> <br/>
+        <li>5.1 if there is any bottleneck, do extra picking to solve this bottleneck</li> <br/>
+    	<ul>6. print the results as work orders <br/></ul>
     
 
 The average capacity utilization of our algorithm is 94% and the average wave utilization is 99%.

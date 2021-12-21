@@ -27,8 +27,8 @@
 <ol start="5">
 <li><em> If the daily capacity is still not full, do extra picking</em></li>
 </ol>
-<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.0 control the checklist if there is any bottleneck in the upcoming days</em></p>
-<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.1 if there is any bottleneck, do extra picking to solve this bottleneck</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.1 control the checklist if there is any bottleneck in the upcoming days</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.2 if there is any bottleneck, do extra picking to solve this bottleneck</em></p>
 <ol start="6">
 <li><em> print the results as work orders</em></li>
 </ol>

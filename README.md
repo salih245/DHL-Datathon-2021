@@ -21,9 +21,10 @@ Using all the features, we tried different regression models ranging from simple
 The picking algorithm is developed to collect the placed orders before the shipment date while minimizing the daily wave number under some capacity constraints. These constraints are: first, the daily picked amount cannot exceed a predefined capacity, second, in each wave, a limited number of types of material can be picked. After doing some research, using mathematical models is costly in terms of computation time and because of the time constraint in the operation process, we decided to move on with a heuristic approach to solve the problem in a fast and efficient way. The pseudo-code for the algorithm:
 
 for each day, do: <br/>
-	<ul>1. Add the newly placed orders and the orders that haven’t shipped to checklist</ul> <br/>
-    	<ul>2. move the items that should be picked that day from checklist to picking_list</ul> <br/>
-    	<ul>3. pick all the items from picking_list</ul> <br/>
+<dl>
+	<dt>1. Add the newly placed orders and the orders that haven’t shipped to checklist</dt> <br/>
+    	<dt>2. move the items that should be picked that day from checklist to picking_list</dt> <br/>
+    	<dt>3. pick all the items from picking_list</dt> <br/>
         <li>3.1 if the daily capacity is not exceeded</li> <br/>
 		<li>pick the items as  'normal_picking'</li> <br/>
         <li>3.2 if the daily capacity is exceeded</li> <br/> 
@@ -35,6 +36,6 @@ for each day, do: <br/>
         <li>5.0 control the checklist if there is any bottleneck in the upcoming days</li> <br/>
         <li>5.1 if there is any bottleneck, do extra picking to solve this bottleneck</li> <br/>
     	<ul>6. print the results as work orders <br/></ul>
-    
+</dl> 
 
 The average capacity utilization of our algorithm is 94% and the average wave utilization is 99%.

@@ -4,7 +4,7 @@
 
 (https://www.linkedin.com/feed/update/urn:li:activity:6877662215583891456/)
 
-In DHL Datathon 2021, there were 3 different projects; Product Segmentation, Volume Prediction, and Developing a Picking Algorithm. Detailed solution approaches to these projects are presented below.
+In DHL Datathon 2021, there were 3 different projects: Product Segmentation, Volume Prediction, and Developing a Picking Algorithm. Detailed solution approaches to these projects are presented below.
 
 ### Product Segmentation
 
